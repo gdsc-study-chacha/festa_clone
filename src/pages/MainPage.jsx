@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainPage = () => {
     return (
-        <div style={{display: "flex"}}>
+        <div>
             갱갱갱
         </div>
     );
