@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../assets/Pretendard-Medium.otf") format("opentype");
+}
+
+* {
+  font-family: "Pretendard";
+}
+
+@media (min-width: 375px) {
+  #root {
+      width: 430px;
+  }
+}
+@media (max-width: 500px) {
+  #root {
+      width: 100vw;
+  }
+}
+
+#root {
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+body{
+  touch-action: pan-y pan-x;
+  -webkit-tap-highlight-color:transparent;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
