@@ -1,0 +1,13 @@
+@mixin font1{
+  font-family:Spoqa Han Sans Neo;
+  font-weight :500px;
+  font-size:16px;
+  color:rgb(94,94,98);
+}
+@mixin font2{
+  font-family: Spoqa Han Sans Neo;
+  font-weight:400px;
+  font-size:12px;
+  line-height: 14px;
+  color:rgb(172,170,175)
+}
