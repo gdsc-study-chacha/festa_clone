@@ -11,3 +11,9 @@
   line-height: 14px;
   color:rgb(172,170,175)
 }
+@mixin font3($size){
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  line-height: normal;
+  font-size: $size;
+}

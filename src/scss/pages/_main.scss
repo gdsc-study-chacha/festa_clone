@@ -4,6 +4,233 @@
   background-image: url('../../assets/common/main1.svg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; 
   height:100vh;
+  display:flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-top: 215px;
+  img{
+    width:50%;
+    height:20%;
+    position:absolute;
+    top:150px;
+    right:16px;
+   
+
+  }
+    .title-container{
+      display: flex;
+      flex-direction: column;
+      .text1{
+        font-family: Roboto;
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        color:white;
+      }
+      .text2{
+        
+        font-family: Black Han Sans;
+        font-size:44px;
+        line-height:44px;
+        color:white;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .main-scroller{
+      margin-bottom:20px;
+      margin-top:auto;
+      color:white;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size:24px;
+      animation: moveUpDown 2s ease-in-out infinite; /* 애니메이션 적용 */
+    }
+  
+}
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0); /* 원래 위치 */
+  }
+  50% {
+      transform: translateY(-20px); /* 위로 20px 이동 */
+  }
+  100% {
+      transform: translateY(0); /* 원래 위치로 돌아옴 */
+  }
+}
+
+.main-wrapper{
+  padding-left: 16px;
+  padding-right:16px;
+  padding-bottom:139px;
+  padding-top:54px;
+  display:flex;
+  flex-direction: column;
+  gap:100px;
+
+.main-container1{
+  width:100%;
+  // height:230px;
+  .text{
+    height:35px;
+    margin-bottom: 35px;
+    font-size:24px;
+    font-weight: bold;
+    font-family:Noto Sans KR;
+  }
+  .video-container{
+    display:flex;
+    overflow-x: scroll;
+    .box{
+      margin-right: 13px;
+      position: relative;
+      img{
+        width:287px;
+        height:195px;
+      }
+      .title{
+        position:absolute;
+        top:32px;
+        left:21px;
+        font-size:18px;
+        font-family:Spoqa Han Sans Neo;
+        font-weight:bold;
+        line-height:18px;
+      }
+      .content{
+        position:absolute;
+        top:61px;
+        left:21px;
+        font-size:14px;
+        font-weight:300px;
+        font-family:Spoqa Han Sans Neo;
+      }
+    }
+    
+  }
+}
+.main-container2{
+  width:100%;
+  position:relative;
+  height:209px;
+  .arrow{
+    font-size:20px;
+    width:24px;
+    position:absolute;
+    top:0px;
+    right:0px;
+
+  }
+  .title{
+    font-weight: bold;
+    font-size:24px;
+    margin-bottom: 10px;
+  }
+  img{
+    // height:calc(100% - 31.5px);
+    // 부모요소에 명시적으로 height가 적용되어야 calc 100% 사용가능
+    display:block;
+    object-fit:cover;
+    border-radius: 12px;
+    //이미지의 비율을 유지하면서 부모 요소를 완전히 채우도록 조정합니다.
+    // 이 경우 이미지의 일부가 잘릴 수 있습니다.
+  }
+}
+.main-container3{
+  height:219px;
+  width:100%;
+  .text-container{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title{
+      font-weight: bold;
+      font-size:24px;
+      line-height:24px;
+      height:24px;
+    }
+    .arrow{
+      font-size:24px;
+      line-height: 24px;
+      height:24px
+    }//수직 정렬 line-height=height
+  }
+  
+
+
+  
+  .img-container{
+    background-color: white;
+    //background: linear-gradient(to bottom, rgba(255, 255, 255, 1)0%, rgba(33,33,33, 1)100%);
+   // opacity:20%;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(13, 13, 13, 0.08) 50%, rgba(33, 33, 33, 0.2) 100%), #FFF;
+   height:calc(100% - 44px);
+    border-radius:12px;
+    display:flex;
+    .text-con{
+      display: flex;
+      flex-direction: column;
+      margin-top: 31px;
+      margin-left: 11px;
+      font-weight: bold;
+      font-size:18px;
+    }
+    .img-con{
+      margin-top: auto;
+      margin-left: auto;
+    }
+   
+  }
+}
+.main-container4{
+  width:100%;
+  //height:214px;
+  //display:flex;
+  .title{
+    font-weight: bold;
+    font-size:24px;
+    height:24px;
+    line-height: 24px;
+    margin-bottom:20px;
+  }
+  .card-wrapper{
+    display:flex;
+    width:100%;
+    gap:10px;
+    .card-container{
+      display:flex;
+      position:relative;
+      width:30vw;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(13, 13, 13, 0.08) 50%, rgba(33, 33, 33, 0.2) 100%), #FFF;
+      height:175px;
+      border-radius: 16px;
+      border:  rgb(235,234,234) 1px solid;
+      img{
+       //position:absolute;
+        width:90px;
+        height:40px;
+        //top:0px;
+      }
+      .text-container{
+        position:absolute;
+        bottom:16px;
+        width:100%;
+        padding-left:16px;
+        color:white;
+      }
+    }
+
+  }
+
+}
 
 }
